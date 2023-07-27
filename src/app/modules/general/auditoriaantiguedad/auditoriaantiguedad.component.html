@@ -18,9 +18,9 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-6" style="margin-top:10px ;border:solid 1px black">
                 <div class="row" style="margin-top:10px ">
-                    <div class="col-md"><span>Rango anos:</span></div>
+                    <div class="col-md"><span>Rango años:</span></div>
                     <div class="col-md">
                         <p-inputNumber [(ngModel)]="inicioin" [max]="100" [min]="0"
                                        [showButtons]="true" inputId="minmax-buttons" mode="decimal"
@@ -41,18 +41,18 @@
                                        suffix="%"></p-inputNumber>
                     </div>
                 </div>
-                <div class="row" style="margin-top:10px ">
+                <div class="mt-2 d-flex flex-row-reverse bloquefiltro">
                     <button class="btn btn-danger" (click)="agregar()">AGREGAR</button>
                 </div>
             </div>
-            <div class="col">
+            <div class="col-md-6 d-flex" style="margin-top:10px ;border:solid 1px black">
                 <table>
                     <tbody>
 <!--                    <tr>-->
 <!--                        <th *ngFor="let field of items[0] | keyvalue">{{field.key}}</th>-->
 <!--                    </tr>-->
                     <tr *ngFor="let item of items;let indexOfelement=index;">
-                        <td>{{item.rangoinicio}} - {{item.rangofin}}- {{item.porcentaje}}</td>
+                        <td>Rango: {{item.rangoinicio}} a {{item.rangofin}} años. Porcentaje: {{item.porcentaje}}</td>
                         <td><button class="btn btn-sm btn-outline-danger" (click)="gotoEdit(indexOfelement)">
                             <i class="fa-solid fa-trash"></i>
                         </button></td>

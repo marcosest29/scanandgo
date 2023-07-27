@@ -31,8 +31,10 @@ export class AuditoriaantiguedadComponent implements OnInit {
   }
 
   agregar(){
-    let tip= new Tipo(this.inicioin, this.finin, this.porcentajein);
-    this.items.push(tip);
+    if(this.inicioin && this.finin && this.porcentajein){
+      let tip= new Tipo(this.inicioin, this.finin, this.porcentajein);
+      this.items.push(tip);
+    }
   }
 
   gotoEdit(item){
