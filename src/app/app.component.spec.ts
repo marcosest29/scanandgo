@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'ndpp'`, () => {
+  it(`should have as title 'scan-and-go'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.debugElement.componentInstance;
-    expect(app.title).toEqual('ndpp');
+    expect(app.title).toEqual('scan-and-go');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('ndpp app is running!');
+    expect(compiled.querySelector('.content span').textContent).toContain('scan-and-go app is running!');
   });
 });

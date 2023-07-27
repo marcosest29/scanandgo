@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "ndpp": {
+    "scan-and-go": {
       "projectType": "application",
       "schematics": {"@schematics/angular:application": {
         "strict": true
@@ -83,10 +83,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "ndpp:build:production"
+              "browserTarget": "scan-and-go:build:production"
             },
             "development": {
-              "browserTarget": "ndpp:build:development"
+              "browserTarget": "scan-and-go:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -94,7 +94,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "ndpp:build"
+            "browserTarget": "scan-and-go:build"
           }
         },
         "test": {
@@ -131,17 +131,17 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "ndpp:serve"
+            "devServerTarget": "scan-and-go:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "ndpp:serve:production"
+              "devServerTarget": "scan-and-go:serve:production"
             }
           }
         }
       }
     }},
-  "defaultProject": "ndpp",
+  "defaultProject": "scan-and-go",
   "cli": {
     "analytics": false
   }

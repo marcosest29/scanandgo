@@ -1,1 +1,1 @@
-# ndpp
+# scan-and-go
