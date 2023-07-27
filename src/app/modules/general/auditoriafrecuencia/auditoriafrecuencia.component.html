@@ -1,0 +1,62 @@
+<div class="mjflex">
+    <div class="col">
+        <div class="row">
+            <div class="col-2">
+                <span>Nombre:</span>
+            </div>
+            <div class="col">
+                <input type="text" class="form-control" [(ngModel)]="nombre" />
+
+            </div>
+        </div>
+        <div class="row" style="margin-top:10px ">
+            <div class="col-md-2"><span>Validez QR:</span></div>
+            <div class="col-md-4">
+                <p-inputNumber [(ngModel)]="qa" [max]="100" [min]="0"
+                               [showButtons]="true" inputId="minmax-buttons" mode="decimal"
+                               suffix=" minutos"></p-inputNumber>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                Aplica
+            </div>
+            <div class="col">
+                <div class="row">
+                    <div class="col">
+                        Shopper
+                    </div>
+                    <div class="col">
+                        <p-radioButton id="1" name="porcentaje" value="1" [(ngModel)]="tipo" inputId="1"></p-radioButton>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        Todos
+                    </div>
+                    <div class="col">
+                    <p-radioButton id="2" name="porcentaje" value="2" [(ngModel)]="tipo" inputId="1">Todos</p-radioButton>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div >
+                    Inicia en:
+                    <div >
+                        <p-inputNumber [(ngModel)]="inicia" [max]="100" [min]="0"
+                                       [showButtons]="true" inputId="minmax-buttons" mode="decimal"
+                                       ></p-inputNumber>
+                    </div>
+                </div>
+                <div>
+                    Intervalo: cada
+                    <div >
+                        <p-inputNumber [(ngModel)]="intervalo" [max]="100" [min]="0"
+                                       [showButtons]="true" inputId="minmax-buttons" mode="decimal"
+                                       suffix=" cuenta"></p-inputNumber>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

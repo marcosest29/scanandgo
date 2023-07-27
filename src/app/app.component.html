@@ -1,0 +1,89 @@
+<header class="navbar navbar-expand-md">
+  <div class="container">
+    <div class="row w-100">
+      <div class="col-md-3">
+        <span class="h3 textcolorcorp ">CAPED</span>
+      </div>
+      <div class="col-md">
+        <div class="d-flex flex-row">
+          <div class="botonhome">
+            <a href="#">
+              <img src="assets/images/home.png" alt="Inicio">
+            </a>
+          </div>
+          <div *ngIf="pantalla==='tipoauditoria'">
+            <p-menu #menu [model]="items" [popup]="true"></p-menu>
+            <a class="hand" title="Agregar">
+              <img (click)="menu.toggle($event)" src="assets/images/plusicon.png" alt="Agregar">
+            </a>
+          </div>
+          <div *ngIf="pantalla==='auditoria'">
+            <a  class="hand ms-2" >
+              <i class="fas fa-file-excel" style="color:red;font-size:25px;margin-top:5px"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<div class="mjflex">
+  <p-dialog header="Crear tipo auditoria" [(visible)]="modalAntiguedad" [style]="{width: '1000px',height:'750px'}">
+    <div>
+      <app-auditoriaantiguedad></app-auditoriaantiguedad>
+    </div>
+    <ng-template pTemplate="footer">
+      <button class="btn btn-outline-secondary" (click)="cerrarAntiguedad()">Guardar <span
+              class="pi pi-times"></span>
+      </button>
+      <button class="btn btn-outline-secondary" (click)="cerrarAntiguedad()">Cancelar <span
+              class="pi pi-times"></span>
+      </button>
+    </ng-template>
+  </p-dialog>
+</div>
+<div class="mjflex">
+  <p-dialog header="Crear tipo auditoria" [(visible)]="modalFrecuencia" [style]="{width: '750px',height:'500px'}">
+    <div>
+      <app-auditoriafrecuencia></app-auditoriafrecuencia>
+    </div>
+    <ng-template pTemplate="footer">
+      <button class="btn btn-outline-secondary" (click)="cerrarFrecuencia()">Generar <span
+              class="pi pi-times"></span>
+      </button>
+      <button class="btn btn-outline-secondary" (click)="cerrarFrecuencia()">Cancelar <span
+              class="pi pi-times"></span>
+      </button>
+    </ng-template>
+  </p-dialog>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="separadorcorp whitetextcolor">
+      {{titulo}}
+    </div>
+  </div>
+</div>
+
+<main style="height: 100%;">
+  <router-outlet></router-outlet>
+</main>
+
+<footer class="mt-5">
+  <div class="container">
+    <div class="row fondocorp corpfooter">
+      <div class="col-md-6">
+        Usuario: (smxadmin) SILVIA CARLINA ABBOUD ABUD (ADMINISTRADOR)
+      </div>
+      <div class="col-md-2">
+        Perfil: ANALISTA DESARROLLO
+      </div>
+      <div class="col-md-2">
+        Formato de negocio:OFICINAS
+      </div>
+      <div class="col-md">
+        Versión: 1.0.0
+      </div>
+    </div>
+  </div>
+</footer>

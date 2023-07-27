@@ -1,0 +1,65 @@
+<div class="mjflex">
+    <div class="col">
+        <div class="row">
+            <div class="col-2">
+                <span>Nombre:</span>
+            </div>
+            <div class="col">
+                <input type="text" class="form-control" [(ngModel)]="nombre" />
+
+            </div>
+        </div>
+        <div class="row" style="margin-top:10px ">
+            <div class="col-md-2"><span>Validez QR:</span></div>
+            <div class="col-md-4">
+                <p-inputNumber [(ngModel)]="qa" [max]="100" [min]="0"
+                               [showButtons]="true" inputId="minmax-buttons" mode="decimal"
+                               suffix=" minutos"></p-inputNumber>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="row" style="margin-top:10px ">
+                    <div class="col-md"><span>Rango anos:</span></div>
+                    <div class="col-md">
+                        <p-inputNumber [(ngModel)]="inicioin" [max]="100" [min]="0"
+                                       [showButtons]="true" inputId="minmax-buttons" mode="decimal"
+                                       suffix="%"></p-inputNumber>
+                    </div>
+                    <div class="col-md"><span>a</span></div>
+                    <div class="col-md">
+                        <p-inputNumber [(ngModel)]="finin" [max]="100" [min]="0"
+                                       [showButtons]="true" inputId="minmax-buttons" mode="decimal"
+                                       suffix="%"></p-inputNumber>
+                    </div>
+                </div>
+                <div class="row" style="margin-top:10px ">
+                    <div class="col-md"><span>Porcentaje:</span></div>
+                    <div class="col-md">
+                        <p-inputNumber #ini [(ngModel)]="porcentajein" [max]="100" [min]="0"
+                                       [showButtons]="true" inputId="minmax-buttons" mode="decimal"
+                                       suffix="%"></p-inputNumber>
+                    </div>
+                </div>
+                <div class="row" style="margin-top:10px ">
+                    <button class="btn btn-danger" (click)="agregar()">AGREGAR</button>
+                </div>
+            </div>
+            <div class="col">
+                <table>
+                    <tbody>
+<!--                    <tr>-->
+<!--                        <th *ngFor="let field of items[0] | keyvalue">{{field.key}}</th>-->
+<!--                    </tr>-->
+                    <tr *ngFor="let item of items;let indexOfelement=index;">
+                        <td>{{item.rangoinicio}} - {{item.rangofin}}- {{item.porcentaje}}</td>
+                        <td><button class="btn btn-sm btn-outline-danger" (click)="gotoEdit(indexOfelement)">
+                            <i class="fa-solid fa-trash"></i>
+                        </button></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

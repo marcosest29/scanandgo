@@ -1,0 +1,113 @@
+{
+  "auditorias": [
+    {
+      "nombre": "ANTIGUEDAD"
+    },
+    {
+      "nombre": "FRECUENCIA"
+    }
+  ],
+  "shoppers": [
+    {
+      "nombre": "SHOPPER 1"
+    },
+    {
+      "nombre": "SHOPPER 2"
+    },
+    {
+      "nombre": "SHOPPER 3"
+    },
+    {
+      "nombre": "SHOPPER 4"
+    }
+  ],
+  "locales": [
+    {
+      "codigo": "711",
+      "nombre": "6 DE DICIEMBRE",
+      "zona": "QUITO",
+      "marcado":false
+    },
+    {
+      "codigo": "101",
+      "nombre": "MULTICENTRO",
+      "zona": "QUITO",
+      "marcado":false
+    },
+    {
+      "codigo": "103",
+      "nombre": "CARCELEN",
+      "zona": "QUITO",
+      "marcado":false
+    },
+    {
+      "codigo": "716",
+      "nombre": "SCALA",
+      "zona": "QUITO",
+      "marcado":false
+    },
+    {
+      "codigo": "712",
+      "nombre": "SAN LUIS",
+      "zona": "QUITO",
+      "marcado":false
+    }
+  ],
+"auditoriastabla": [
+    {
+      "factura": "FACTURA 1",
+      "local": "711",
+      "auditoria": "FRECUENCIA",
+      "shopper": "SHOPPER 1",
+      "fechacompra": "2023-01-01"
+    },
+  {
+    "factura": "FACTURA 2",
+    "local": "712",
+    "auditoria": "FRECUENCIA",
+    "shopper": "SHOPPER 2",
+    "fechacompra": "2023-01-01"
+  },
+  {
+    "factura": "FACTURA 3",
+    "local": "713",
+    "auditoria": "ANTIGUEDAD",
+    "shopper": "SHOPPER 3",
+    "fechacompra": "2023-01-03"
+  },
+  {
+    "factura": "FACTURA 4",
+    "local": "714",
+    "auditoria": "ANTIGUEDAD",
+    "shopper": "SHOPPER 4",
+    "fechacompra": "2023-01-01"
+  },{
+    "factura": "FACTURA 5",
+    "local": "716",
+    "auditoria": "FRECUENCIA",
+    "shopper": "SHOPPER 5",
+    "fechacompra": "2023-01-01"
+  }
+
+  ],
+  "tipoauditorias": [
+    {
+      "codigo": "CODIGO 1",
+      "descripcion": "Antiguedad 2023",
+      "tipo": "TIPO 1",
+      "estado": "FINALIZADO"
+    },
+    {
+      "codigo": "CODIGO 2",
+      "descripcion": "Frecuencia por shopper",
+      "tipo": "TIPO 2",
+      "estado": "EN PROCESO"
+    },
+    {
+      "codigo": "CODIGO 3",
+      "descripcion": "Frecuencia para todos",
+      "tipo": "TIPO 3",
+      "estado": "INICIADO"
+    }
+  ]
+}
