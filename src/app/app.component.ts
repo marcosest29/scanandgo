@@ -14,7 +14,7 @@ export class AppComponent implements OnInit {
   titulo = 'Scan and Go';
   items: MenuItem[] | undefined;
   modalAntiguedad:boolean=false;
-  modalFrecuencia:boolean=true;
+  modalFrecuencia:boolean=false;
   constructor(
     @Inject(PLATFORM_ID) private platformId: object,
     private mymsgservice: MyMsgService,
