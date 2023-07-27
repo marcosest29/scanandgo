@@ -46,19 +46,18 @@
                 </div>
             </div>
             <div class="col-md-6 d-flex" style="margin-top:10px ;border:solid 1px black">
-                <table>
-                    <tbody>
-<!--                    <tr>-->
-<!--                        <th *ngFor="let field of items[0] | keyvalue">{{field.key}}</th>-->
-<!--                    </tr>-->
-                    <tr *ngFor="let item of items;let indexOfelement=index;">
-                        <td>Rango: {{item.rangoinicio}} a {{item.rangofin}} años. Porcentaje: {{item.porcentaje}}</td>
-                        <td><button class="btn btn-sm btn-outline-danger" (click)="gotoEdit(indexOfelement)">
-                            <i class="fa-solid fa-trash"></i>
-                        </button></td>
-                    </tr>
-                    </tbody>
-                </table>
+                <div >
+                    <table>
+                        <tbody>
+                        <tr *ngFor="let item of items;let indexOfelement=index;">
+                            <td>Rango: {{item.rangoinicio}} a {{item.rangofin}} años. Porcentaje: {{item.porcentaje}}</td>
+                            <td><button class="btn btn-sm btn-outline-danger" (click)="gotoEdit(indexOfelement)">
+                                <i class="fa-solid fa-trash"></i>
+                            </button></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </div>
     </div>
