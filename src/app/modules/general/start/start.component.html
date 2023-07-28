@@ -1,22 +1,49 @@
 <div class="container" style="height: 100%;">
     <div class="row mt-4" style="height: 100%;">
 
-        <div>
-            <div class="row g-1">
-                <div class="col-md-3">
-                    <div class="caja shadow border d-flex hand" (click)="gotoAuditoria()">
-                        <i class="ico fa-solid fa-clipboard-list"></i>
-                        <span class="mt-3 center">AUDITORIA</span>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="caja shadow border d-flex hand" (click)="gotoTipoAuditoria()">
-                        <i class="ico fa-solid fa-file-invoice"></i>
-                        <span class="mt-3 center">TIPO AUDITORIA</span>
-                    </div>
-                </div>
-            </div>
+<!--        <div>-->
+<!--            <div class="row g-1">-->
+<!--                <div class="col-md-3">-->
+<!--                    <div class="caja shadow border d-flex hand" (click)="gotoAuditoria()">-->
+<!--                        <i class="ico fa-solid fa-clipboard-list"></i>-->
+<!--                        <span class="mt-3 center">AUDITORIA</span>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="col-md-3">-->
+<!--                    <div class="caja shadow border d-flex hand" (click)="gotoTipoAuditoria()">-->
+<!--                        <i class="ico fa-solid fa-file-invoice"></i>-->
+<!--                        <span class="mt-3 center">TIPO AUDITORIA</span>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
 
+<!--        </div>-->
+        <div>
+            <p-tabView>
+                <p-tabPanel header="SCAN AND GO">
+                    <div class="row g-1">
+                        <div class="col-md-3">
+                            <div class="caja shadow border d-flex hand" (click)="gotoAuditoria()">
+                                <i class="ico fa-solid fa-clipboard-list"></i>
+                                <span class="mt-3 center">AUDITORIA</span>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="caja shadow border d-flex hand" (click)="gotoTipoAuditoria()">
+                                <i class="ico fa-solid fa-file-invoice"></i>
+                                <span class="mt-3 center">TIPO AUDITORIA</span>
+                            </div>
+                        </div>
+                    </div>
+                </p-tabPanel>
+                <p-tabPanel header="APIS PARA EMPRESAS DELIVERY" style="">
+                    <p>
+                        MODULOS CAPED APIS PARA EMPRESAS DELIVERY
+                    </p>
+                </p-tabPanel>
+            </p-tabView>
         </div>
     </div>
 </div>
+
+

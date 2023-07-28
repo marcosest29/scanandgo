@@ -31,6 +31,7 @@ import { AuditoriaComponent } from './modules/general/auditoria/auditoria.compon
 import { TipoauditoriaComponent } from './modules/general/tipoauditoria/tipoauditoria.component';
 import { AuditoriaantiguedadComponent } from './modules/general/auditoriaantiguedad/auditoriaantiguedad.component';
 import { AuditoriafrecuenciaComponent } from './modules/general/auditoriafrecuencia/auditoriafrecuencia.component';
+import { TabViewModule } from 'primeng/tabview';
 
 
 @NgModule({
@@ -66,7 +67,8 @@ import { AuditoriafrecuenciaComponent } from './modules/general/auditoriafrecuen
     FieldsetModule,
     StepsModule,
     CardModule,
-    MenuModule
+    MenuModule,
+    TabViewModule
   ],
   
   providers: [NodeService,MessageService,MyMsgService],
