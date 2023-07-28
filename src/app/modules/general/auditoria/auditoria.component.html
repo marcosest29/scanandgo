@@ -17,7 +17,7 @@
                                    inputId="local"
                                    optionLabel="nombre" placeholder="Selecione auditorias"></p-multiSelect>
                 </div>
-                <p class="mt-1">Factura:</p>
+                <p class="mt-1">Pedido tipti:</p>
                 <div class="p-fluid">
                     <input type="text" class="form-control" [(ngModel)]="factura" />
                 </div>
@@ -48,10 +48,11 @@
                         <tr>
                             <th></th>
                             <th>N</th>
-                            <th>Factura</th>
+                            <th>Pedido Tipti</th>
                             <th>Local</th>
                             <th>Auditoria</th>
                             <th>Shopper</th>
+                            <th>Revision</th>
                             <th>Fecha compra</th>
                             <th>Acciones</th>
                         </tr>
@@ -64,6 +65,7 @@
                             <td>{{ tarea.local }}</td>
                             <td>{{ tarea.auditoria }}</td>
                             <td>{{ tarea.shopper }}</td>
+                            <td>{{ tarea.revision }}</td>
                             <td>{{ tarea.fechacompra }}</td>
                             <td class="d-flex">
                                 <button class="btn btn-sm btn-outline-danger" (click)="gotoEdit()">

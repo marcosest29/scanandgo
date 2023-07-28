@@ -24,13 +24,13 @@
                     <div class="col-md">
                         <p-inputNumber [(ngModel)]="inicioin" [max]="100" [min]="0"
                                        [showButtons]="true" inputId="minmax-buttons" mode="decimal"
-                                       suffix="%"></p-inputNumber>
+                                       ></p-inputNumber>
                     </div>
                     <div class="col-md"><span>a</span></div>
                     <div class="col-md">
                         <p-inputNumber [(ngModel)]="finin" [max]="100" [min]="0"
                                        [showButtons]="true" inputId="minmax-buttons" mode="decimal"
-                                       suffix="%"></p-inputNumber>
+                                       ></p-inputNumber>
                     </div>
                 </div>
                 <div class="row" style="margin-top:10px ">
@@ -50,7 +50,7 @@
                     <table>
                         <tbody>
                         <tr *ngFor="let item of items;let indexOfelement=index;">
-                            <td>Rango: {{item.rangoinicio}} a {{item.rangofin}} años. Porcentaje: {{item.porcentaje}}</td>
+                            <td>Rango: {{item.rangoinicio}} a {{item.rangofin}} años. Porcentaje: {{item.porcentaje}}%</td>
                             <td><button class="btn btn-sm btn-outline-danger" (click)="gotoEdit(indexOfelement)">
                                 <i class="fa-solid fa-trash"></i>
                             </button></td>

@@ -55,38 +55,43 @@
   ],
 "auditoriastabla": [
     {
-      "factura": "FACTURA 1",
+      "factura": "PEDIDO 1",
       "local": "711",
       "auditoria": "FRECUENCIA",
       "shopper": "SHOPPER 1",
-      "fechacompra": "2023-01-01"
+      "fechacompra": "2023-01-01",
+      "revision": "CAJA"
     },
   {
-    "factura": "FACTURA 2",
+    "factura": "PEDIDO 2",
     "local": "712",
     "auditoria": "FRECUENCIA",
     "shopper": "SHOPPER 2",
-    "fechacompra": "2023-01-01"
+    "fechacompra": "2023-01-01",
+    "revision": "CAJA"
   },
   {
-    "factura": "FACTURA 3",
+    "factura": "PEDIDO 3",
     "local": "713",
     "auditoria": "ANTIGUEDAD",
     "shopper": "SHOPPER 3",
-    "fechacompra": "2023-01-03"
+    "fechacompra": "2023-01-03",
+    "revision": "SCAN AND GO"
   },
   {
-    "factura": "FACTURA 4",
+    "factura": "PEDIDO 4",
     "local": "714",
     "auditoria": "ANTIGUEDAD",
     "shopper": "SHOPPER 4",
-    "fechacompra": "2023-01-01"
+    "fechacompra": "2023-01-01",
+    "revision": "SCAN AND GO"
   },{
-    "factura": "FACTURA 5",
+    "factura": "PEDIDO 5",
     "local": "716",
     "auditoria": "FRECUENCIA",
     "shopper": "SHOPPER 5",
-    "fechacompra": "2023-01-01"
+    "fechacompra": "2023-01-01",
+    "revision": "SCAN AND GO"
   }
 
   ],
@@ -95,19 +100,25 @@
       "codigo": "CODIGO 1",
       "descripcion": "Antiguedad 2023",
       "tipo": "TIPO 1",
-      "estado": "FINALIZADO"
+      "estado": "VIGENTE",
+      "finicio": "2023-07-20",
+      "ffin": " "
     },
     {
       "codigo": "CODIGO 2",
       "descripcion": "Frecuencia por shopper",
       "tipo": "TIPO 2",
-      "estado": "EN PROCESO"
+      "estado": "CADUCADO",
+      "finicio": "2023-01-01",
+      "ffin": "2023-01-02"
     },
     {
       "codigo": "CODIGO 3",
       "descripcion": "Frecuencia para todos",
       "tipo": "TIPO 3",
-      "estado": "INICIADO"
+      "estado": "CADUCADO",
+      "finicio": "2023-02-01",
+      "ffin": "2023-0-02"
     }
   ]
 }

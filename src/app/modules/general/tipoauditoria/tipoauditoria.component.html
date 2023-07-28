@@ -36,17 +36,21 @@
                             <th>Descripcion</th>
                             <th>Tipo</th>
                             <th>Estado</th>
+                            <th>Fecha inicio</th>
+                            <th>Fecha fin</th>
                             <th>Acciones</th>
                         </tr>
                     </ng-template>
                     <ng-template pTemplate="body" let-tarea let-rowIndex="rowIndex">
-                        <tr>
+                        <tr [style.background-color]="rowIndex+1 == 1 ? 'green' : 'white'">
                             <td><p-checkbox name="tareasgrupo" [binary]="true" [(ngModel)]="auditoriasTabla"></p-checkbox></td>
                             <td>{{ rowIndex+1 }}</td>
                             <td>{{ tarea.codigo }}</td>
                             <td>{{ tarea.descripcion }}</td>
                             <td>{{ tarea.tipo }}</td>
                             <td>{{ tarea.estado }}</td>
+                            <td>{{ tarea.finicio }}</td>
+                            <td>{{ tarea.ffin }}</td>
                             <td class="d-flex">
                                 <button class="btn btn-sm btn-outline-danger" (click)="gotoEdit()">
                                     <i class="fa-solid fa-eye"></i>
